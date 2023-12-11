@@ -1,0 +1,10 @@
+.custom_draggable {
+  padding: 4px;
+  cursor: move;
+  box-sizing: border-box;
+
+  &:hover {
+    border-radius: 8px;
+    border: 1px solid purple;
+  }
+}
