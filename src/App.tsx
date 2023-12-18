@@ -1,6 +1,7 @@
 import { useState } from "react";
 import DraggableItem from "./components/DraggableItem";
 import EditableText from "./components/EditableText";
+import Navbar from "./layout/Navbar";
 
 enum COLOR {
   WHITE = "white",
@@ -45,27 +46,8 @@ function App() {
 
   return (
     <div className="flex h-screen max-w-screen max-h-screen">
-      <div className="w-1/5 bg-red-100 flex items-center justify-center">
-        <div className="flex flex-col gap-4">
-          <button
-            onClick={handleAddText}
-            className="border bg-blue-100 px-4 py-2 rounded"
-          >
-            Add Text
-          </button>
-          <button
-            onClick={handleAddImage}
-            className="border bg-blue-100 px-4 py-2 rounded"
-          >
-            Add image
-          </button>
-          <button
-            onClick={handleChangeBackground}
-            className="border bg-blue-100 px-4 py-2 rounded"
-          >
-            Change background
-          </button>
-        </div>
+      <div className="w-[30%]">
+        <Navbar />
       </div>
       <div className="flex-1 bg-yellow-100 flex items-center justify-center">
         <div
